@@ -12,7 +12,7 @@ namespace ProjectEulerMultiplesOf3And5
         {
             Console.WriteLine("Please enter below number?");
             var number = int.Parse(Console.ReadLine() ?? string.Empty);
-            var result = CalcSumForNumber(3, number) + CalcSumForNumber(5, number);
+            var result = CalcSumForNumber(3, number) + CalcSumForNumber(5, number) - CalcSumForNumber(15, number);
 
             Console.WriteLine($"Result is: {result}");
 
